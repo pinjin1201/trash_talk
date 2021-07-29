@@ -9,6 +9,9 @@ const port = 3000
 app.engine('handlebars', exphbs({ defaultLayout: 'main'}))
 app.set('view engine', 'handlebars')
 
+// 設定靜態檔案位置
+app.use(express.static('public'))
+
 // index 路由設定
 app.get('/', (req, res) => {
   res.render('index')
