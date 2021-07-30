@@ -2,6 +2,9 @@
 const express = require('express')
 const exphbs = require('express-handlebars')
 
+// 載入 images.json
+const images = require('./images.json')
+
 const app = express()
 const port = 3000
 
@@ -14,7 +17,7 @@ app.use(express.static('public'))
 
 // index 路由設定
 app.get('/', (req, res) => {
-  res.render('index')
+  res.render('index', { images: images.data })
 })
 
 // 啟動並監聽本機伺服器

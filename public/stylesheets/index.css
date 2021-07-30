@@ -1,0 +1,30 @@
+
+.title {
+  font-size: 2.6em;
+  color: #49010F;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.role-group > .role > .role-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #881600;
+  margin-top: 200px;
+}
+
+.submit-btn {
+  height: 50px;
+  background-color: #C16200;
+  color: #49010F;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-color: #49010F;
+}
+
+.form-textarea {
+  width: 70%;
+  margin-left: 30px;
+  border-color: #881600;
+  color: #E3E36A;
+}
