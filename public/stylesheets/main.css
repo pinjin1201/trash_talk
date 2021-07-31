@@ -1,8 +1,11 @@
+
+/* navber */
 .navbar {
   background-color: #E3E36A;
   color: #C16200;
 }
 
+/* navber 內文 */
 .navbar-title {
   font-size: 1.5em;
   font-weight: bold;
