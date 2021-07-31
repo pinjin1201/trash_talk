@@ -1,23 +1,30 @@
+<!-- partial template -->
+<!-- index.handlebars -->
+
 <div class="container">
+  <!-- 話語產生器 form -->
   <form action="/" method="POST">
+    <!-- title -->
     <div class="title alert alert-light text-center" role="alert">
       你想對誰說幹話 ?
     </div>
+    <!-- role group -->
     <div class="role-group d-flex justify-content-around">
       {{#each role}}
       <div class="role card-group d-flex flex-column">
         <!-- image -->
         <div class="role-image" style="width: 18rem; height: 80px;">
-          <img class="card-img-top" src="{{ this.image }}" alt="Card image cap">
+          <img class="role-image" src="{{ this.image }}" alt="role-image">
         </div>
         <!-- name -->
         <div class="role-name form-check text-center">
-          <input class="form-check-input mt-3" type="radio" name="role" id="{{ this.name_en }}" value="{{ this.name_en }}" {{ this.state }}>
+          <input class="form-check-input mt-3" type="radio" name="role" id="{{ this.name_en }}" value="{{ this.name_en }}">
           <label class="form-check-label" for="{{ this.name_en }}">{{ this.name }}</label>
         </div>
       </div>
       {{/each}}
     </div>
+    <!-- 製造話語 -->
     <div class="form-group d-flex justify-content-center mt-5">
       <!-- button -->
       <button type="submit" class="submit-btn btn btn-warning">產生幹話</button>
