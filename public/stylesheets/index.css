@@ -12,7 +12,14 @@
   font-size: 1.5em;
   font-weight: bold;
   color: #881600;
-  margin-top: 200px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+/* 角色圖片 */
+.role-image {
+  width: 20rem;
+  height: 250px;
 }
 
 /* submit button */
