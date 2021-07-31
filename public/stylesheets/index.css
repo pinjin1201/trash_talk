@@ -1,4 +1,5 @@
 
+/* 大標 */
 .title {
   font-size: 2.6em;
   color: #49010F;
@@ -6,6 +7,7 @@
   margin-top: 40px;
 }
 
+/* 角色名稱 */
 .role-group > .role > .role-name {
   font-size: 1.5em;
   font-weight: bold;
@@ -13,6 +15,7 @@
   margin-top: 200px;
 }
 
+/* submit button */
 .submit-btn {
   height: 50px;
   background-color: #C16200;
@@ -22,6 +25,7 @@
   border-color: #49010F;
 }
 
+/* textbox */
 .form-textarea {
   width: 70%;
   margin-left: 30px;
@@ -29,9 +33,4 @@
   color: #49010F;
   font-size: 1.7em;
   font-weight: bold;
-}
-
-.alert-word {
-  color: red;
-  font-size: 1.5em;
 }
