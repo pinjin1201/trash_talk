@@ -1,12 +1,12 @@
 
 # 網頁描述
 
-  ### 在 Node.js 環境，使用 Express 建設的一個 “ 說話產生器 ”
+### 在 Node.js 環境，使用 Express 建設的一個 “ 說話產生器 ”
 
 * 使用者可以任選一個角色 ( 三選一 )、按下按鈕，對他們說出一句話。
 
 * 圖片 :
-![網頁圖片](https://github.com/pinjin1201/trash_talk/blob/main/trash_talk.png?raw=true)
+![網頁圖片]()
 
 # 網頁特色
 
