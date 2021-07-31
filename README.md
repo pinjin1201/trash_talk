@@ -6,7 +6,7 @@
 * 使用者可以任選一個角色 ( 三選一 )、按下按鈕，對他們說出一句話。
 
 * 圖片 :
-![網頁圖片](/README/trash_talk.PNG)
+![網頁圖片](https://github.com/pinjin1201/trash_talk/blob/main/trash_talk.png?raw=true)
 
 # 網頁特色
 
