@@ -38,5 +38,5 @@ app.post('/', (req, res) => {
 
 // 啟動並監聽本機伺服器
 app.listen(port, () => {
-  console.log(`Express app listening on port ${port}.`)
+  console.log(`Express is listening on localhost:${port}`)
 })
