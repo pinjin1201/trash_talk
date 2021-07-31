@@ -1,29 +1,30 @@
 <div class="container">
-  <div class="title alert alert-light text-center" role="alert">
-    你想對誰說幹話 ?
-  </div>
-  <div class="role-group d-flex justify-content-around">
-    {{#each images}}
-    <div class="role card-group d-flex flex-column">
-      <!-- image -->
-      <div class="role-image" style="width: 18rem; height: 80px;">
-        <img class="card-img-top" src="{{ this.image }}" alt="Card image cap">
-      </div>
-      <div class="line"></div>
-      <!-- name -->
-      <div class="role-name form-check text-center">
-        <input class="form-check-input mt-3" type="radio" name="name" id="name" value="name">
-        <label class="form-check-label" for="exampleRadios1">{{ this.name }}</label>
-      </div>
+  <form action="/" method="POST">
+    <div class="title alert alert-light text-center" role="alert">
+      你想對誰說幹話 ?
     </div>
-    {{/each}}
-  </div>
-  <form action="/">
+    <div class="role-group d-flex justify-content-around">
+      {{#each role}}
+      <div class="role card-group d-flex flex-column">
+        <!-- image -->
+        <div class="role-image" style="width: 18rem; height: 80px;">
+          <img class="card-img-top" src="{{ this.image }}" alt="Card image cap">
+        </div>
+        <!-- name -->
+        <div class="role-name form-check text-center">
+          <input class="form-check-input mt-3" type="radio" name="role" id="{{ this.name_en }}" value="{{ this.name_en }}" {{ this.state }}>
+          <label class="form-check-label" for="{{ this.name_en }}">{{ this.name }}</label>
+        </div>
+      </div>
+      {{/each}}
+    </div>
     <div class="form-group d-flex justify-content-center mt-5">
       <!-- button -->
-      <button type="button" class="submit-btn btn btn-warning">產生幹話</button>
+      <button type="submit" class="submit-btn btn btn-warning">產生幹話</button>
       <!-- textarea -->
-      <textarea class="form-textarea form-control" id="textarea" rows="3"></textarea>
+      <textarea class="form-textarea form-control" id="textarea" rows="3">
+        {{{ start }}}
+      </textarea>
     </div>
   </form>
 </div>

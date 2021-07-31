@@ -1,9 +1,11 @@
-// 載入 express, express-handlebars
+// 載入 express, express-handlebars, body-parser
 const express = require('express')
 const exphbs = require('express-handlebars')
+const bodyParser = require('body-parser')
 
-// 載入 images.json
-const images = require('./images.json')
+// 載入 images.json, trash_talk.js
+const role = require('./role.json')
+const generateTrashTalk = require('./trash_talk.js')
 
 const app = express()
 const port = 3000
@@ -15,9 +17,23 @@ app.set('view engine', 'handlebars')
 // 設定靜態檔案位置
 app.use(express.static('public'))
 
+// 設定 body-parser
+app.use(bodyParser.urlencoded({ extended: true }))
+
 // index 路由設定
 app.get('/', (req, res) => {
-  res.render('index', { images: images.data })
+  res.render('index', { role: role.data })
+})
+
+app.post('/', (req, res) => {
+  const options = req.body.role
+
+ // const stay = req.body
+  
+  const start = generateTrashTalk(options)
+
+
+  res.render('index', { role: role.data, start })
 })
 
 // 啟動並監聽本機伺服器
